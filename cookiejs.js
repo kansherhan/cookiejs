@@ -29,6 +29,6 @@ class CookieJs {
 	}
 
 	static remove(name) {
-		setCookie(name, "", {'max-age': -1});
+		this.set(name, "", {'max-age': -1});
 	}
 }
